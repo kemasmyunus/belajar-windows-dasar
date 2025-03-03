@@ -20,3 +20,38 @@ Untuk membuka terminal di Windows, gunakan salah satu cara berikut:
 | Ekstensi | Perintah dasar saja | Bisa menggunakan cmdlet dan modul tambahan |
 
 ---
+
+## **Bab 2: Perintah Dasar di CMD dan PowerShell**
+
+### **2.1 Perintah Navigasi File dan Folder**
+| Perintah | Fungsi |
+|---|---|
+| `dir` | Menampilkan daftar file dan folder dalam direktori (CMD) |
+| `ls` | Menampilkan daftar file dan folder (PowerShell) |
+| `cd <folder>` | Berpindah ke folder tertentu |
+| `cd ..` | Kembali ke folder sebelumnya |
+| `mkdir <nama_folder>` | Membuat folder baru |
+| `rmdir <nama_folder>` | Menghapus folder kosong |
+| `del <nama_file>` | Menghapus file |
+
+### **2.2 Perintah Manajemen Sistem**
+| Perintah | Fungsi |
+|---|---|
+| `cls` | Membersihkan layar terminal |
+| `echo <teks>` | Menampilkan teks ke terminal |
+| `type <file>` | Menampilkan isi file teks (CMD) |
+| `cat <file>` | Menampilkan isi file teks (PowerShell) |
+| `tasklist` | Menampilkan daftar proses yang berjalan |
+| `taskkill /IM <nama_proses>` | Menghentikan proses tertentu |
+| `shutdown /s /t 0` | Mematikan komputer |
+| `shutdown /r /t 0` | Merestart komputer |
+
+### **2.3 Perintah Jaringan**
+| Perintah | Fungsi |
+|---|---|
+| `ipconfig` | Menampilkan konfigurasi jaringan |
+| `ping <alamat>` | Mengecek koneksi ke suatu alamat |
+| `netstat -an` | Melihat koneksi jaringan yang aktif |
+| `nslookup <domain>` | Melihat informasi DNS dari domain |
+
+---

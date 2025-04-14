@@ -31,3 +31,31 @@ Remove-Item -Recurse -Force "C:\Folder\"
 ```
 
 ---
+
+# **Bab 5: Pengenalan Alias dan Fungsi di PowerShell**
+
+### **5.1 Alias di PowerShell**
+Alias adalah nama pendek dari perintah PowerShell.
+
+| Alias | Perintah Asli |
+|---|---|
+| `ls` | `Get-ChildItem` |
+| `rm` | `Remove-Item` |
+| `mv` | `Move-Item` |
+| `cp` | `Copy-Item` |
+
+Cek alias dengan:
+```powershell
+Get-Alias
+```
+
+### **5.2 Membuat Fungsi Sederhana**
+Contoh fungsi untuk menyapa:
+```powershell
+function Sapa($nama) {
+    Write-Output "Halo, $nama!"
+}
+Sapa "Andi"
+```
+
+---

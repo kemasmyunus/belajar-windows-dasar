@@ -83,3 +83,32 @@ Get-Process > proses.txt
 ```
 
 ---
+
+# **Bab 7: Praktik Mini Proyek**
+
+### **7.1 Proyek: Backup Otomatis Folder**
+Skrip untuk mencadangkan folder:
+```powershell
+$folderAsal = "C:\Data"
+$folderTujuan = "D:\Backup\Data_$(Get-Date -Format yyyyMMdd)"
+Copy-Item $folderAsal -Destination $folderTujuan -Recurse
+Write-Output "Backup selesai ke $folderTujuan"
+```
+
+### **7.2 Proyek: Monitor Koneksi Internet**
+```powershell
+while ($true) {
+    $ping = Test-Connection -ComputerName google.com -Count 1 -Quiet
+    if ($ping) {
+        Write-Output "$(Get-Date): Koneksi OK"
+    } else {
+        Write-Output "$(Get-Date): Koneksi Terputus"
+    }
+    Start-Sleep -Seconds 5
+}
+```
+
+---
+
+# **Penutup**
+Dengan penguasaan CMD dan PowerShell, pengguna Windows bisa lebih produktif, memahami sistem lebih dalam, dan bahkan mengotomatisasi tugas-tugas harian secara efisien. Terus eksplorasi dan praktik untuk mengembangkan keterampilan!

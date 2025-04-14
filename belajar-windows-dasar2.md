@@ -59,3 +59,27 @@ Sapa "Andi"
 ```
 
 ---
+
+# **Bab 6: Tips dan Trik PowerShell**
+
+### **6.1 Menggunakan Tab untuk Autocomplete**
+Tekan `Tab` untuk melengkapi nama perintah, file, atau parameter secara otomatis.
+
+### **6.2 Membaca Bantuan**
+PowerShell menyediakan dokumentasi internal:
+```powershell
+Get-Help Get-Process
+```
+
+Untuk menampilkan contoh penggunaan:
+```powershell
+Get-Help Get-Process -Examples
+```
+
+### **6.3 Menyimpan Output ke File**
+Simpan hasil perintah ke file teks:
+```powershell
+Get-Process > proses.txt
+```
+
+---

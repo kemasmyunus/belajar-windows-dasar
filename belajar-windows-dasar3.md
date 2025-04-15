@@ -45,3 +45,45 @@ schtasks /delete /tn "BackupData"
 ```
 
 ---
+
+# **Bab 10: Menggunakan PowerShell untuk Administrasi Sistem**
+
+### **10.1 Menambahkan Pengguna Baru**
+```powershell
+net user penggunaBaru password123 /add
+```
+
+### **10.2 Menambahkan ke Grup Administrator**
+```powershell
+net localgroup administrators penggunaBaru /add
+```
+
+### **10.3 Melihat Informasi Sistem**
+```powershell
+Get-ComputerInfo
+```
+
+---
+
+# **Bab 11: Pengenalan Modul PowerShell**
+
+### **11.1 Apa itu Modul?**
+Modul adalah kumpulan fungsi dan perintah tambahan untuk PowerShell.
+
+### **11.2 Mengimpor Modul**
+```powershell
+Import-Module <NamaModul>
+```
+
+### **11.3 Menginstal Modul Baru**
+Untuk PowerShell 5.0+:
+```powershell
+Install-Module -Name Az
+```
+
+### **11.4 Melihat Modul Terinstal**
+```powershell
+Get-Module -ListAvailable
+```
+
+---

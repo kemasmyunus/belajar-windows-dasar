@@ -87,3 +87,36 @@ Get-Module -ListAvailable
 ```
 
 ---
+
+# **Bab 12: PowerShell dan File CSV/JSON**
+
+### **12.1 Membaca File CSV**
+```powershell
+$csv = Import-Csv "data.csv"
+$csv
+```
+
+### **12.2 Menyimpan ke File CSV**
+```powershell
+Get-Process | Export-Csv "proses.csv" -NoTypeInformation
+```
+
+### **12.3 Membaca dan Menulis JSON**
+```powershell
+# Membaca
+$data = Get-Content "data.json" | ConvertFrom-Json
+
+# Menulis
+$data | ConvertTo-Json | Out-File "hasil.json"
+```
+
+---
+
+# **Penutup Tambahan**
+PowerShell sangat cocok untuk:
+- Otomatisasi backup dan monitoring.
+- Pengelolaan sistem dan jaringan.
+- Pengolahan file data (CSV, JSON).
+- Integrasi dengan tool lain (Git, Azure, dll.).
+
+---

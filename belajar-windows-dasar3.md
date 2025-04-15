@@ -30,3 +30,18 @@ Start-Process "C:\Path\to\file.txt"
 ```
 
 ---
+
+# **Bab 9: Otomatisasi Tugas Jadwal (Task Scheduler)**
+
+### **9.1 Membuat Tugas Terjadwal lewat CMD**
+```cmd
+schtasks /create /tn "BackupData" /tr "powershell.exe -File D:\script\backup.ps1" /sc daily /st 08:00
+```
+
+### **9.2 Melihat dan Menghapus Tugas**
+```cmd
+schtasks /query
+schtasks /delete /tn "BackupData"
+```
+
+---

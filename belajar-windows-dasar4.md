@@ -72,3 +72,26 @@ salam
 - Modul yang sering digunakan
 
 ---
+
+# **Bab 16: Keamanan dan Praktik Baik PowerShell**
+
+### **16.1 Execution Policy**
+Cek kebijakan eksekusi:
+```powershell
+Get-ExecutionPolicy
+```
+
+Ubah agar bisa jalankan skrip:
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+### **16.2 Tips Keamanan**
+- Jangan jalankan skrip dari sumber tidak dikenal
+- Selalu baca isi skrip sebelum eksekusi
+- Gunakan `-WhatIf` untuk simulasi tanpa efek:
+```powershell
+Remove-Item C:\Data\* -Recurse -WhatIf
+```
+
+---

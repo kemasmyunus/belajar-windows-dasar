@@ -47,3 +47,28 @@ Exit-PSSession
 ```
 
 ---
+
+# **Bab 15: Pengenalan PowerShell Profile dan Kustomisasi**
+
+### **15.1 Membuka Profil PowerShell**
+```powershell
+notepad $PROFILE
+```
+
+### **15.2 Contoh Isi Profile**
+```powershell
+Import-Module posh-git
+Set-Alias gs git status
+Set-Alias gc git commit
+function salam {
+    Write-Output "Selamat datang, $(whoami)!"
+}
+salam
+```
+
+### **15.3 Otomatisasi Kustom Terminal**
+- Tambahkan alias
+- Tema prompt
+- Modul yang sering digunakan
+
+---

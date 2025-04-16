@@ -24,3 +24,26 @@ Import-Module posh-git
 ```
 
 ---
+
+# **Bab 14: PowerShell Remoting (Akses Jarak Jauh)**
+
+### **14.1 Apa itu PowerShell Remoting?**
+PowerShell Remoting memungkinkan kita menjalankan perintah di komputer lain melalui jaringan.
+
+### **14.2 Mengaktifkan PowerShell Remoting**
+Jalankan di komputer target:
+```powershell
+Enable-PSRemoting -Force
+```
+
+### **14.3 Mengakses Komputer Jarak Jauh**
+```powershell
+Enter-PSSession -ComputerName NAMA_KOMPUTER -Credential (Get-Credential)
+```
+
+Keluar dari sesi:
+```powershell
+Exit-PSSession
+```
+
+---

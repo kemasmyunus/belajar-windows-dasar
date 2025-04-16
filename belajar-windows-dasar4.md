@@ -95,3 +95,38 @@ Remove-Item C:\Data\* -Recurse -WhatIf
 ```
 
 ---
+
+# **Bab 17: Contoh Proyek Mini: Auto Cleanup dan Backup**
+
+### **Skrip: Bersihkan File Lama dan Backup**
+```powershell
+$folder = "C:\Logs"
+$backupFolder = "D:\BackupLogs"
+
+# Buat folder backup kalau belum ada
+if (!(Test-Path $backupFolder)) {
+    New-Item -ItemType Directory -Path $backupFolder
+}
+
+# Backup log lama
+Get-ChildItem $folder -Recurse -Include *.log |
+Where-Object { $_.LastWriteTime -lt (Get-Date).AddDays(-7) } |
+Copy-Item -Destination $backupFolder
+
+# Hapus file log yang lebih dari 30 hari
+Get-ChildItem $folder -Recurse -Include *.log |
+Where-Object { $_.LastWriteTime -lt (Get-Date).AddDays(-30) } |
+Remove-Item -Force
+```
+
+---
+
+# **Kesimpulan Besar**
+PowerShell bukan hanya pengganti CMD — ia adalah alat manajemen sistem yang sangat kuat, dapat digunakan untuk:
+- Otomatisasi administrasi
+- Pemantauan sistem
+- Backup dan pembersihan data
+- Integrasi dengan Git dan cloud
+- Remoting dan scripting skala enterprise
+
+---

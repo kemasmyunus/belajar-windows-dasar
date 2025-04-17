@@ -97,3 +97,41 @@ $connection.Close()
 > Cocok buat admin sistem yang butuh akses langsung ke database internal.
 
 ---
+
+# **Bab 22: Membuat GUI Sederhana dengan PowerShell**
+
+### **22.1 GUI Input dengan `Add-Type`**
+```powershell
+Add-Type -AssemblyName Microsoft.VisualBasic
+$name = [Microsoft.VisualBasic.Interaction]::InputBox("Masukkan nama kamu:", "Input Nama")
+[System.Windows.Forms.MessageBox]::Show("Halo, $name!")
+```
+
+### **22.2 GUI Folder Picker**
+```powershell
+Add-Type -AssemblyName System.Windows.Forms
+$folderBrowser = New-Object System.Windows.Forms.FolderBrowserDialog
+$folderBrowser.ShowDialog() | Out-Null
+Write-Output $folderBrowser.SelectedPath
+```
+
+---
+
+# **Bab 23: Contoh Studi Kasus Dunia Kerja**
+
+### ✅ **Admin Sistem Otomatisasi Backup**
+- Backup file tiap jam
+- Kirim email jika gagal
+- Simpan log
+
+### ✅ **DevOps Monitoring Server**
+- Cek service yang mati
+- Kirim alert ke tim
+- Restart otomatis
+
+### ✅ **Programmer Otomatisasi Deploy**
+- Build dan push ke repo
+- Copy ke server
+- Jalankan tes otomatis
+
+---

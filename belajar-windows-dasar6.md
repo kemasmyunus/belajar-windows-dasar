@@ -37,3 +37,37 @@ schtasks /create /tn "BackupHarian" /tr "powershell.exe -ExecutionPolicy Bypass 
 > 🔁 Backup berjalan otomatis setiap hari jam 03:00 pagi. Cocok buat server atau komputer kantor yang aktif 24 jam.
 
 ---
+
+## **24.5 Membuat ZIP File Otomatis**
+PowerShell bisa juga buat backup berbentuk arsip `.zip`:
+```powershell
+Compress-Archive -Path $source -DestinationPath "$destination.zip"
+```
+
+> ✅ Berguna untuk backup file konfigurasi atau laporan harian/bulanan dalam bentuk ringkas.
+
+---
+
+## **24.6 Menggabungkan Semua: Skrip Backup Harian Lengkap**
+```powershell
+$source = "$env:USERPROFILE\Documents"
+$backupRoot = "D:\Backup"
+$date = Get-Date -Format 'yyyyMMdd_HHmm'
+$destination = "$backupRoot\Documents_$date"
+
+# Backup
+Copy-Item -Path $source -Destination $destination -Recurse -Force
+
+# Log
+$logPath = "$backupRoot\log_backup.txt"
+$log = "$(Get-Date): Backup selesai ke $destination"
+Add-Content -Path $logPath -Value $log
+
+# Hapus backup lama (lebih dari 15 hari)
+$limit = (Get-Date).AddDays(-15)
+Get-ChildItem -Path $backupRoot -Directory |
+Where-Object { $_.LastWriteTime -lt $limit } |
+Remove-Item -Recurse -Force
+```
+
+---

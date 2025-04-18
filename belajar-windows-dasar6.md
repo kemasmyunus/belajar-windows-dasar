@@ -71,3 +71,20 @@ Remove-Item -Recurse -Force
 ```
 
 ---
+
+## **24.7 Studi Kasus di Dunia Nyata**
+| Skenario | Manfaat PowerShell |
+|---|---|
+| Backup data lab medis harian | Otomatis, terjadwal, dan bisa diaudit lewat log |
+| Arsip laporan shift malam | Di-zip otomatis, efisien disimpan |
+| Bersihkan file temp pasien lama | Aman, cepat, dan terkontrol dengan log |
+
+---
+
+## **Kesimpulan Bab 24**
+PowerShell bisa menggantikan banyak tugas manual harian:
+- Backup & pembersihan file
+- Logging & arsip otomatis
+- Penjadwalan tugas tanpa klik-klik
+
+---

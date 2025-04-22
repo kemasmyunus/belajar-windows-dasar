@@ -11,3 +11,12 @@ $password = "RahasiaBanget123"
 > 🔐 Pastikan password disimpan aman atau gunakan credential vault.
 
 ---
+
+## **24.9 Tips Keamanan dan Pemeliharaan**
+
+- 🔒 **Gunakan folder backup di drive terpisah** agar tidak ikut hilang jika drive utama rusak.
+- 📁 **Batasi akses folder backup** hanya untuk admin atau user tertentu.
+- 📦 **Hapus backup lama secara berkala** agar tidak memenuhi storage.
+- 🔄 **Uji restore secara rutin** untuk memastikan backup valid.
+
+---

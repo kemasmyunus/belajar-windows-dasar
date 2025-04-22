@@ -20,3 +20,14 @@ $password = "RahasiaBanget123"
 - 🔄 **Uji restore secara rutin** untuk memastikan backup valid.
 
 ---
+
+## **24.10 Troubleshooting Umum**
+
+| Masalah | Penyebab Umum | Solusi |
+|--------|----------------|--------|
+| File tidak ter-copy | Izin akses | Jalankan PowerShell sebagai Administrator |
+| Jadwal tidak berjalan | Path atau policy salah | Gunakan `-ExecutionPolicy Bypass` |
+| Backup overwrite | Nama folder tidak unik | Gunakan `$(Get-Date -Format ...)` dalam nama |
+| Backup gagal | File sedang digunakan | Gunakan Volume Shadow Copy atau backup saat idle |
+
+---

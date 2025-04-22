@@ -46,3 +46,14 @@ PowerShell adalah alat yang sangat powerful untuk:
 - Komunitas PowerShell di StackOverflow dan Reddit
 
 ---
+
+### ✅ Rangkuman Singkat:
+| Fitur | Perintah Kunci |
+|------|----------------|
+| Backup harian | `Copy-Item` |
+| Auto zip | `Compress-Archive` atau `7z.exe` |
+| Pembersihan otomatis | `Remove-Item` + `Where-Object` |
+| Logging | `Add-Content` |
+| Penjadwalan | `schtasks /create` |
+
+---

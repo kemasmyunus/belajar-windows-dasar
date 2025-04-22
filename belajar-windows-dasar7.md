@@ -31,3 +31,18 @@ $password = "RahasiaBanget123"
 | Backup gagal | File sedang digunakan | Gunakan Volume Shadow Copy atau backup saat idle |
 
 ---
+
+## **24.11 Penutup dan Referensi Tambahan**
+
+PowerShell adalah alat yang sangat powerful untuk:
+
+- 🛠️ Automatisasi backup
+- 🧹 Manajemen file berskala besar
+- 🕒 Penjadwalan rutin tanpa campur tangan user
+
+### 📚 Referensi Tambahan:
+- [Microsoft Docs – PowerShell Scripting](https://learn.microsoft.com/powershell/)
+- [7-Zip CLI Manual](https://sevenzip.osdn.jp/chm/cmdline/)
+- Komunitas PowerShell di StackOverflow dan Reddit
+
+---

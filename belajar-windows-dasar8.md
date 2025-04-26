@@ -47,3 +47,44 @@ D:
 untuk pindah ke drive D:\.
 
 ---
+
+## Manipulasi File dan Folder
+
+Membuat folder:
+```bash
+mkdir BelajarCMD
+```
+Menghapus folder:
+```bash
+rmdir BelajarCMD
+```
+Menghapus file:
+```bash
+del laporan.txt
+```
+
+---
+
+## Menjalankan Program Lewat CMD
+
+Contoh:
+```bash
+notepad
+```
+Akan membuka aplikasi Notepad.
+
+Kalau mau buka file dengan program tertentu:
+```bash
+start notepad laporan.txt
+```
+Ini akan membuka `laporan.txt` di Notepad.
+
+---
+
+## Tips Tambahan
+
+- Gunakan `tab` untuk auto-complete nama file/folder.
+- Tekan `Arrow Up` untuk mengulang perintah sebelumnya.
+- CMD tidak case sensitive, jadi `DIR` dan `dir` sama saja.
+
+---

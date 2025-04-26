@@ -14,3 +14,36 @@ Ada beberapa cara membuka CMD:
 - Search di Start Menu: ketik `cmd` → pilih "Run as administrator" (jika butuh akses lebih tinggi).
 
 ---
+
+## Perintah Dasar CMD
+
+| Perintah        | Fungsi                                    |
+|-----------------|-------------------------------------------|
+| `dir`           | Melihat daftar file dan folder            |
+| `cd`            | Pindah directory/folder                   |
+| `cd ..`         | Naik satu level folder                    |
+| `mkdir nama`    | Membuat folder baru                       |
+| `rmdir nama`    | Menghapus folder                          |
+| `del nama.file` | Menghapus file                            |
+| `copy file1 file2` | Menyalin file                         |
+| `move file1 file2` | Memindahkan atau rename file/folder    |
+| `cls`           | Membersihkan layar CMD                   |
+| `exit`          | Menutup CMD                               |
+
+---
+
+## Navigasi Folder
+
+Contoh:
+```bash
+cd Documents\Project
+```
+Artinya: Masuk ke folder `Documents`, lalu ke `Project`.
+
+Kalau mau langsung ke drive lain, ketik:
+```bash
+D:
+```
+untuk pindah ke drive D:\.
+
+---

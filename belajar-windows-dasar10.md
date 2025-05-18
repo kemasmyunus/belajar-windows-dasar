@@ -81,3 +81,59 @@ if %nilai% GEQ 75 (
 )
 pause
 ```
+
+### GOTO
+
+```bat
+@echo off
+goto menu
+
+:menu
+echo === Menu Utama ===
+echo 1. Mulai
+echo 2. Keluar
+pause
+```
+
+---
+
+## Looping dengan FOR
+
+CMD mendukung perulangan melalui perintah `FOR`.
+
+Contoh:
+
+```bat
+@echo off
+for %%i in (1 2 3 4 5) do (
+    echo Nomor: %%i
+)
+pause
+```
+
+---
+
+## Contoh Program Sederhana
+
+**Program Batch: Kalkulator Penjumlahan**
+
+```bat
+@echo off
+set /p a=Masukkan angka pertama: 
+set /p b=Masukkan angka kedua: 
+set /a hasil=%a% + %b%
+echo Hasil: %hasil%
+pause
+```
+
+---
+
+## Kesimpulan
+
+Dengan menguasai dasar CMD dan scripting batch, kamu bisa:
+
+* Membuat tool otomatis sederhana.
+* Mempermudah tugas rutin seperti backup, pembersihan folder, atau pengaturan sistem.
+* Membangun fondasi untuk belajar scripting yang lebih canggih (PowerShell, Bash, Python, dll).
+
+---

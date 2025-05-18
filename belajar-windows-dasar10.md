@@ -49,3 +49,35 @@ Halo Andi
 ```
 
 ---
+
+## Input dari Pengguna
+
+Gunakan `set /p` untuk meminta input dari pengguna.
+
+Contoh:
+
+```bat
+@echo off
+set /p nama=Siapa nama kamu? 
+echo Halo %nama%
+pause
+```
+
+---
+
+## Struktur Kendali (If, Goto)
+
+CMD juga mendukung struktur logika dasar.
+
+### IF
+
+```bat
+@echo off
+set /p nilai=Masukkan nilai: 
+if %nilai% GEQ 75 (
+    echo Lulus!
+) else (
+    echo Tidak lulus!
+)
+pause
+```

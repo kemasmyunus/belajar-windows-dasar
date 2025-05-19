@@ -19,3 +19,54 @@ Berikut beberapa soal untuk menguji pemahamanmu:
 5. Buat batch file yang akan membuka Notepad dan menampilkan pesan “Selamat datang”.
 
 ---
+
+## 🔧 Proyek Mini CMD
+
+Berikut beberapa proyek mini yang bisa kamu coba untuk latihan:
+
+### **1. Auto Backup Sederhana**
+
+**Tujuan**: Menyalin isi folder penting ke folder backup.
+
+```bat
+@echo off
+set sumber=C:\Users\%username%\Documents\Project
+set tujuan=C:\Backup\ProjectBackup
+xcopy "%sumber%" "%tujuan%" /s /i /y
+echo Backup selesai.
+pause
+```
+
+> Catatan: Pastikan folder `Project` dan `Backup` ada, atau gunakan `mkdir` dulu.
+
+---
+
+### **2. Menu Interaktif**
+
+**Tujuan**: Memberi pilihan kepada pengguna untuk membuka aplikasi tertentu.
+
+```bat
+@echo off
+:menu
+cls
+echo === MENU UTAMA ===
+echo 1. Buka Notepad
+echo 2. Buka Kalkulator
+echo 3. Keluar
+set /p pilihan=Pilih opsi [1-3]:
+
+if "%pilihan%"=="1" (
+    start notepad
+    goto menu
+)
+if "%pilihan%"=="2" (
+    start calc
+    goto menu
+)
+if "%pilihan%"=="3" (
+    exit
+)
+goto menu
+```
+
+---

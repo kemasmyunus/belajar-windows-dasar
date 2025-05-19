@@ -70,3 +70,30 @@ goto menu
 ```
 
 ---
+
+
+## 🧠 Tips dan Trik Lanjutan
+
+* Gunakan `pushd` dan `popd` untuk navigasi folder sementara.
+* Simpan skrip batch kamu di folder `C:\Scripts` dan tambahkan ke PATH agar bisa dijalankan dari mana saja.
+* Kombinasikan dengan perintah seperti `schtasks` untuk menjadwalkan tugas otomatis.
+* Untuk debugging, tambahkan perintah `pause` atau `echo` untuk melihat jalannya script.
+
+---
+
+## 📘 Rangkuman Akhir
+
+| Topik                        | Sudah Dipelajari ✅ |
+| ---------------------------- | ------------------ |
+| Membuka CMD                  | ✅                  |
+| Navigasi dan Manipulasi File | ✅                  |
+| Menjalankan Program          | ✅                  |
+| Menyimpan Output             | ✅                  |
+| CMD Sebagai Admin            | ✅                  |
+| Batch Script Dasar           | ✅                  |
+| Variabel dan Input           | ✅                  |
+| Struktur Logika              | ✅                  |
+| Perulangan (`for`)           | ✅                  |
+| Proyek dan Latihan           | ✅                  |
+
+---

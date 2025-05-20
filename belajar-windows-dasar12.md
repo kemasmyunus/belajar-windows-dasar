@@ -18,3 +18,30 @@ Keterangan:
 * `/st` = start time (08:00)
 
 ---
+
+### 2. **Log Otomatis ke File**
+
+Untuk mencatat aktivitas script:
+
+```bat
+echo Backup dimulai pada %date% %time% >> log_backup.txt
+xcopy C:\Data D:\Backup /s /i /y >> log_backup.txt
+echo Backup selesai pada %date% %time% >> log_backup.txt
+```
+
+---
+
+### 3. **Deteksi dan Tanggapi Error**
+
+```bat
+@echo off
+xcopy C:\Data D:\Backup /s /i /y
+if errorlevel 1 (
+    echo Terjadi error saat backup! >> log_error.txt
+) else (
+    echo Backup berhasil.
+)
+pause
+```
+
+---

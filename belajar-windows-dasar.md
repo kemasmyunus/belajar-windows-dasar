@@ -74,12 +74,3 @@ Untuk membuka terminal di Windows, gunakan salah satu cara berikut:
 $nama = "Windows"
 Write-Output "Selamat datang di $nama!"
 ```
-
-### **3.3 Menggunakan Loop**
-```powershell
-for ($i=1; $i -le 5; $i++) {
-    Write-Output "Perulangan ke-$i"
-}
-```
-
----

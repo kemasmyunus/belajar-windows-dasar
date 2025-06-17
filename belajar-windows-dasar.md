@@ -83,6 +83,3 @@ for ($i=1; $i -le 5; $i++) {
 ```
 
 ---
-
-## **Kesimpulan**
-Dengan memahami dasar-dasar terminal Windows, pengguna dapat lebih efisien dalam mengelola sistem. PowerShell menyediakan fitur scripting yang lebih kuat dibandingkan CMD, sehingga lebih disarankan untuk pengguna yang ingin mengotomatisasi tugas.

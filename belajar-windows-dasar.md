@@ -55,22 +55,3 @@ Untuk membuka terminal di Windows, gunakan salah satu cara berikut:
 | `nslookup <domain>` | Melihat informasi DNS dari domain |
 
 ---
-
-## **Bab 3: Pengenalan Scripting di PowerShell**
-
-### **3.1 Membuat dan Menjalankan Skrip PowerShell**
-1. Buka Notepad, tulis perintah berikut:
-   ```powershell
-   Write-Output "Halo, ini skrip PowerShell pertama saya!"
-   ```
-2. Simpan sebagai `script.ps1`.
-3. Jalankan dengan perintah:
-   ```powershell
-   powershell -ExecutionPolicy Bypass -File script.ps1
-   ```
-
-### **3.2 Variabel dan Operasi Dasar**
-```powershell
-$nama = "Windows"
-Write-Output "Selamat datang di $nama!"
-```

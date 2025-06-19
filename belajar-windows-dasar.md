@@ -34,14 +34,3 @@ Untuk membuka terminal di Windows, gunakan salah satu cara berikut:
 | `rmdir <nama_folder>` | Menghapus folder kosong |
 | `del <nama_file>` | Menghapus file |
 
-### **2.2 Perintah Manajemen Sistem**
-| Perintah | Fungsi |
-|---|---|
-| `cls` | Membersihkan layar terminal |
-| `echo <teks>` | Menampilkan teks ke terminal |
-| `type <file>` | Menampilkan isi file teks (CMD) |
-| `cat <file>` | Menampilkan isi file teks (PowerShell) |
-| `tasklist` | Menampilkan daftar proses yang berjalan |
-| `taskkill /IM <nama_proses>` | Menghentikan proses tertentu |
-| `shutdown /s /t 0` | Mematikan komputer |
-| `shutdown /r /t 0` | Merestart komputer |

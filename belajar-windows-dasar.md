@@ -45,13 +45,3 @@ Untuk membuka terminal di Windows, gunakan salah satu cara berikut:
 | `taskkill /IM <nama_proses>` | Menghentikan proses tertentu |
 | `shutdown /s /t 0` | Mematikan komputer |
 | `shutdown /r /t 0` | Merestart komputer |
-
-### **2.3 Perintah Jaringan**
-| Perintah | Fungsi |
-|---|---|
-| `ipconfig` | Menampilkan konfigurasi jaringan |
-| `ping <alamat>` | Mengecek koneksi ke suatu alamat |
-| `netstat -an` | Melihat koneksi jaringan yang aktif |
-| `nslookup <domain>` | Melihat informasi DNS dari domain |
-
----
